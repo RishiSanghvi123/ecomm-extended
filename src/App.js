@@ -6,7 +6,7 @@ import Shop from "./routes/shop/shop.component.jsx";
 import Checkout from "./routes/checkout/checkout";
 
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+//import { useDispatch } from "react-redux";
 
 import {
   createUserDocumentFromAuth,
@@ -16,7 +16,7 @@ import {
 import { setCurrentUser } from "./store/user/user.action";
 
 function App() {
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   useEffect(() => {
     const unsubscribe = onAuthStateChangedListener((user) => {
       if (user) {
