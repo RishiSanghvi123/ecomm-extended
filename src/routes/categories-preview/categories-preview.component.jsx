@@ -3,10 +3,12 @@ import CategoryPreview from "../../components/cateogry-preview/category-preview.
 import { useSelector } from "react-redux";
 import { selectCategoriesMap } from "../../store/categories/categories.selector";
 
-const CategoriesPreview = () => {
-  //const { categoriesMap } = useContext(CategoriesContext);
+//import Spinner from "../../components/spinner/spinner.components";
 
+const CategoriesPreview = () => {
   const categoriesMap = useSelector(selectCategoriesMap);
+
+  //const isLoading = useSelector(selectCategoriesIsLoading);
 
   return (
     <>
